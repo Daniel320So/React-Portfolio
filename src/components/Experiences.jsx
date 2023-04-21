@@ -5,8 +5,8 @@ function Experiences() {
       <img id="background-pattern-2" src="./images/patterns/Background_Pattern_2.png" alt="Background_Pattern_of lines" />
       <h2 id="mobile-header"> Working Experience </h2>
       <div id="experience-image">
-        <div class="experience-image-frame experience-active" id="experience-image-frame-1"></div>
-        <div class="experience-image-frame" id="experience-image-frame-2"></div>
+        <div className="experience-image-frame experience-active" id="experience-image-frame-1"></div>
+        <div className="experience-image-frame" id="experience-image-frame-2"></div>
       </div>
       <div id="experience-description">
         <h2> Working Experience </h2>

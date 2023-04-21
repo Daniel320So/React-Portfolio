@@ -7,11 +7,11 @@ function App() {
 
 
   return (
-    <body>
+    <div id="root-wrapper">
       <Header />
       <Main />
       <Footer />
-    </body>
+    </div>
   )
 }
 

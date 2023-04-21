@@ -2,11 +2,11 @@ function Footer() {
 
   return (
     <footer>
-      <div class="footer-item" id="footer-disclaimer-container">
+      <div className="footer-item" id="footer-disclaimer-container">
         <p id="footer-disclaimer" >© All Right Reserved By Ho Kit So, Daniel 2023.</p>
       </div>
       {/* Site Logo */}
-      <a href="#" class="footer-item" id="footer-logo-container">
+      <a href="#" className="footer-item" id="footer-logo-container">
         <img src="./images/danielsodev-logo.png" alt="The Logo of DanielSo.Dev" />
       </a>
     </footer>

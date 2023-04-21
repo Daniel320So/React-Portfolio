@@ -4,7 +4,7 @@ function Contact() {
     // < !--Contacts -- >
     <section id="contacts">
       {/* <!-- First Panel--> */}
-      <div class="contacts-item" id="contacts-1">
+      <div className="contacts-item" id="contacts-1">
         <h2>Contact Me</h2>
         <div id="contacts-img-container">
           <a href="mailto:dan320so@gmail.com"><img src="./images/contacts/gmail.svg" alt="The Logo of Mail" /></a>
@@ -14,14 +14,14 @@ function Contact() {
         </div>
       </div>
       {/* <!-- Second Panel--> */}
-      <div class="contacts-item" id="contacts-2">
+      <div className="contacts-item" id="contacts-2">
         <form id="contacts-form">
-          <label id="nameLabel" for="nameInput">Name</label>
-          <input type="text" class="form-input" id="nameInput" name="nameInput" autocomplete="off" />
-          <label for="subject">Subject</label>
-          <input type="text" class="form-input" id="subject" name="subject" autocomplete="off" />
-          <label for="message">Message</label>
-          <textarea id="message" class="form-input" name="message" rows="10" cols="50" autocomplete="off"></textarea>
+          <label id="nameLabel" htmlFor="nameInput">Name</label>
+          <input type="text" className="form-input" id="nameInput" name="nameInput" autoComplete="off" />
+          <label htmlFor="subject">Subject</label>
+          <input type="text" className="form-input" id="subject" name="subject" autoComplete="off" />
+          <label htmlFor="message">Message</label>
+          <textarea id="message" className="form-input" name="message" rows="10" cols="50" autoComplete="off"></textarea>
           <p id="form-msg"></p>
           <input id="form-submit" type="submit" value="Send" />
         </form>
