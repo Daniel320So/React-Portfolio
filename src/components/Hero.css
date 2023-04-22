@@ -1,9 +1,3 @@
-/* 4. Main */
-main {
-    position: relative;
-    top: var(--header-height);
-}
-
 #hero {
     display: flex;
     flex-flow: column nowrap;
@@ -19,7 +13,7 @@ main {
     left: 0;
     width: 100%;
     height: calc(var(--window-height) - var(--header-height));
-    background: url("../images/main_mobile.png") no-repeat;
+    background: url("../images/main_mobile.png") no-repeat, var(--background-color-1);
     background-size: 100% 80%;
     animation: fadeIn 5s
 }

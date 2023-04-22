@@ -11,7 +11,6 @@ function Hero() {
     // Handle text animations
     let sec = 0;
     const tagLineEle = tagLineRef.current;
-    console.log(tagLineEle.children, tagLineRef)
     for (let i = 0; i < tagLineEle.children.length; i++) {
       let ele = tagLineEle.children[i]
       setTimeout(function () {

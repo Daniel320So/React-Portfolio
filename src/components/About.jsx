@@ -1,4 +1,24 @@
+import { useState, useEffect } from "react"
+import { getImagePath, fetchSkills, fetchEducations } from "../api"
+import "./About.css"
+
 function About() {
+
+  const [educationsData, setEducationsData] = useState(null)
+  const [skillsData, setSkillsData] = useState(null)
+
+  const updateSkillsData = async () => {
+    setSkillsData(await fetchSkills())
+  }
+
+  const updateEducationsData = async () => {
+    setEducationsData(await fetchEducations())
+  }
+
+  useEffect(() => {
+    updateSkillsData();
+    updateEducationsData();
+  }, [])
 
   return (
     <section id="about">
@@ -21,10 +41,15 @@ function About() {
           </div>
           <div className="description-item" id="education">
             <p>Education</p>
-            <div className="description-detail">
-              <p> - BBA in IS & ECON (HKUST)</p>
-              <p> - Web Dev (Humber)</p>
-            </div>
+            {educationsData && (
+              <div className="description-detail">
+                {
+                  educationsData.map(edu => {
+                    return <p key={edu.school_name}>- {edu.content}</p>
+                  })
+                }
+              </div>
+            )}
           </div>
           <div className="description-item" id="interest">
             <p>Interest</p>
@@ -36,9 +61,15 @@ function About() {
         </div>
 
         {/* <!-- Technical Knowledge--> */}
-        <div id="technical-knowledge">
-          <img src="./images/about/technical-knowledge.png" />
-        </div>
+        {skillsData && (
+          <div id="technical-knowledge">
+            {
+              skillsData.map(skill => {
+                return <img key={skill.name} src={getImagePath(skill.image)} alt={skill.name} />
+              })
+            }
+          </div>
+        )}
       </div>
     </section>
   )
