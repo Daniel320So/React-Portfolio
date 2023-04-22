@@ -12,7 +12,6 @@ function Experiences() {
   
   const updateExperiencsData = async () => {
     setExperiencesData(await fetchExperiences())
-    console.log(experiencesData)
   }
 
   const toggleExperience = (n) => {

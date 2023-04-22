@@ -70,132 +70,7 @@ main {
 }
 
 
-/* 7. Projects */
-#projects {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background: var(--background-color-2);
-    padding-bottom: 50px;
-    margin-bottom: 0;
-}
 
-#projects h2 {
-    padding-bottom: 10%;
-}
-
-#projects-container, .projects-item {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.projects-item {
-    border: 1px solid var(--background-color-4);
-    border-radius: 5px;
-    width: 95%;
-}
-
-.project-image-container {
-    position: relative;
-    width:100%;
-}
-
-.project-image-container img{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.project-image-container:hover  .link-container {
-    display: flex;
-}
-
-.link-container {
-    display: none;
-    position: absolute;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--background-color-3);
-}
-
-.link-container > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
-    color: var(--main-color-2);
-    border-radius: 10px;
-    width: 35%;
-    height: 15%;
-    cursor: pointer;
-}
-
-.project-link {
-    background: #1368ad;
-}
-
-.github-link {
-    background: #6e5494;
-}
-
-.projects-text {
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid var(--background-color-4);
-}
-
-.projects-text h3{
-    color: var(--sub-color-2);
-}
-
-.project-stack {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 5px;
-    font-size: 0.75em;
-    padding: 10px 0 ;
-}
-
-.project-stack > p {
-    border: 1px solid var(--main-color-1);
-    border-radius: 5px;
-    padding: 0 2px;
-    margin: 0;
-}
-
-#projects-paginations {
-    display: flex;
-    flex-flow: row wrap;
-    width: 70%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-#projects-paginations p {
-    cursor: pointer;
-}
-
-.page-active {
-    color: var(--main-color-1);
-    border-bottom: 1px solid var(--main-color-1);
-}
-
-.page-disable {
-    color:rgba(208, 203, 161, 0.45);
-    cursor: default !important;
-}
 
 /* 8. Contact */
 #contacts {
@@ -334,18 +209,6 @@ footer {
         font-size: 2em;
     }
 
-    /* 10.7 Projects */
-    #projects-container{
-        display: flex;
-        flex-flow: row wrap;
-        gap: 5%;
-        width: 100%;
-    }
-
-    .projects-item {
-        width: 40%;
-        margin-bottom: 50px;
-    }
 
     /* 10.8 Contacts*/
 
@@ -402,22 +265,6 @@ footer {
     /* 11.2 General */
     h2 {
         font-size: 4em;
-    }
-
-    /* 11.7 Projects */
-    #projects h2 {
-        padding-bottom: 5%;
-    }
-
-    #projects-container{
-        display: flex;
-        flex-flow: row wrap;
-        gap: 5%;
-    }
-
-    .projects-item {
-        width: 25%;
-        margin-bottom: 50px;
     }
 
     /* 11.8 Contact */

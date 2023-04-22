@@ -2,6 +2,9 @@ const base = "http://3.18.220.191/";
 const userId = 3;
 
 const getImagePath = (url) => {
+    if (url.includes("http://localhoststorage/")){
+        url = url.replace("http://localhoststorage/", "")
+    }
     return base + "storage/" + url;
 }
 
@@ -30,9 +33,15 @@ const fetchExperiences = async() => {
     return obj
 }
 
+const fetchProjects = async() => {
+    let obj = await fetchData(base + "api/projects/" + userId);
+    return obj
+}
+
 export {
     getImagePath,
     fetchSkills,
     fetchEducations,
-    fetchExperiences
+    fetchExperiences,
+    fetchProjects
 };
