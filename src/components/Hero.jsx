@@ -9,6 +9,7 @@ function Hero() {
 
   useEffect(() => {
     if (firstLoad) {
+      firstLoad = false;
       // Handle text animations
       let sec = 1500;
       const tagLineEle = tagLineRef.current;
