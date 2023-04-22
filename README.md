@@ -14,4 +14,5 @@ Access through localhost:5173
 
 Access through localhost:3000
 
-Hosted server: http://phrygian-sandy-archduke.glitch.me/
+Hosted server: http://portoflio-danielso.glitch.me/
+(Must be access through http)
