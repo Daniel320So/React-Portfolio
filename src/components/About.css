@@ -65,6 +65,7 @@
 #technical-knowledge img{
     width: 18%;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 #background-pattern-1 {

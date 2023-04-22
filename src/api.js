@@ -25,8 +25,14 @@ const fetchEducations = async() => {
     return obj
 }
 
+const fetchExperiences = async() => {
+    let obj = await fetchData(base + "api/experiences/" + userId);
+    return obj
+}
+
 export {
     getImagePath,
     fetchSkills,
-    fetchEducations
+    fetchEducations,
+    fetchExperiences
 };

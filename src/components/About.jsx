@@ -15,6 +15,10 @@ function About() {
     setEducationsData(await fetchEducations())
   }
 
+  const openSource = (url) => {
+    window.open(url, '_blank');
+  }
+
   useEffect(() => {
     updateSkillsData();
     updateEducationsData();
@@ -65,7 +69,7 @@ function About() {
           <div id="technical-knowledge">
             {
               skillsData.map(skill => {
-                return <img key={skill.name} src={getImagePath(skill.image)} alt={skill.name} />
+                return <img key={skill.name} src={getImagePath(skill.image)} alt={skill.name} onClick={()=>openSource(skill.url)}/>
               })
             }
           </div>
