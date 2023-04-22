@@ -9,7 +9,6 @@ function Projects() {
 
   const updateProjectsData = async () => {
     setProjectsData(await fetchProjects())
-    console.log(projectsData)
   }
 
   useEffect(() => {
@@ -24,7 +23,7 @@ function Projects() {
         <div id="projects-container">
           {
             projectsData.map(p => {
-              return <ProjectCard project={p} />
+              return <ProjectCard key={p.title} project={p} />
             })
           }
         </div>

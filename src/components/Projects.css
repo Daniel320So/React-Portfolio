@@ -13,6 +13,10 @@
     padding-bottom: 10%;
 }
 
+#projects-container {
+    width: 80%;
+    gap: 50px;
+}
 #projects-container,
 .projects-item {
     display: flex;
@@ -22,6 +26,7 @@
 }
 
 .projects-item {
+    position: relative;
     border: 1px solid var(--background-color-4);
     border-radius: 5px;
     width: 95%;
@@ -30,15 +35,16 @@
 .project-image-container {
     position: relative;
     width: 100%;
+    height: 100%;
 }
 
 .project-image-container img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 250px;
 }
 
-.project-image-container:hover .link-container {
+.projects-item:hover .link-container {
     display: flex;
 }
 
@@ -88,6 +94,7 @@
 .projects-text h4 {
     font-size: 0.75em;;
     color: white;
+    height: 50px;
 }
 
 .project-stack {
@@ -103,7 +110,7 @@
 .project-stack>p {
     border: 1px solid var(--main-color-1);
     border-radius: 5px;
-    padding: 0 2px;
+    padding: 0.25em 1em;
     margin: 0;
 }
 
