@@ -114,7 +114,7 @@
     margin: 0;
 }
 
-#projects-paginations {
+/* #projects-paginations {
     display: flex;
     flex-flow: row wrap;
     width: 70%;
@@ -135,7 +135,7 @@
 .page-disable {
     color: rgba(208, 203, 161, 0.45);
     cursor: default !important;
-}
+} */
 
 
 

@@ -11,8 +11,8 @@ function ProjectCard(props) {
         <img src={project.image ? getImagePath(project.image) : ""} alt={project.title} />
       </div>
       <div className="link-container">
-        {project.url && (<a href={project.url} target="_balnk" className="project-link"><p>Site</p></a>)}
-        {project.git && (<a href={project.git} target="_balnk" className="github-link"><p>Github</p></a>)}
+        {project.url && (<a href={project.url} target="_blank" className="project-link"><p>Site</p></a>)}
+        {project.git && (<a href={project.git} target="_blank" className="github-link"><p>Github</p></a>)}
       </div>
       <div className="projects-text">
         <h3>{project.title}</h3>
