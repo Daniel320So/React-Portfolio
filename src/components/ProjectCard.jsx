@@ -4,7 +4,6 @@ import { getImagePath } from "../api";
 function ProjectCard(props) {
 
   const project = props.project;
-  console.log("project", project)
 
   return (
     <div className="projects-item" >

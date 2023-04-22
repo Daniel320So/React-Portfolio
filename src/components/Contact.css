@@ -1,0 +1,137 @@
+#contacts {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: var(--background-color-1);
+    border-bottom: 1px solid #FD9D00;
+}
+
+#contacts h2 {
+    padding-bottom: 50px;
+}
+
+#contacts-1 {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 0 0;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+#contacts-img-container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contacts-img-container a{
+    width: 20%
+}
+
+#contacts-img-container img{
+    width: 70%;
+    max-width: 100%;
+}
+
+#contacts-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+}
+
+#contacts-form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    font-size: 1em;
+    width: 80%;
+    margin: 10% 0 0 10%;
+}
+
+#contacts-form > * {
+    max-width: 100%;
+}
+
+#contacts-form > input, textarea {
+    width: 100%;
+}
+
+.form-input {
+    font-family: var(--text-content);
+    font-size: 1em;
+    color: var(--main-color-2);
+    background: var(--background-color-4);
+    border-radius: 25px;
+    margin-bottom: 25px;
+    min-height: 50px;
+    padding: 5px;
+}
+
+#form-msg {
+    display: none;
+    color: red;
+}
+
+#form-submit {
+    font-weight: 700;
+    font-size: 0.75em;
+    color: var(--sub-color-3);
+    background: var(--main-color-2);
+    border: 3px solid var(--sub-color-3);
+    border-radius: 25px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 480px){
+
+    #contacts-img-container a{
+        width: 15%
+    }
+
+    #contacts-img-container img{
+        width: 100%;
+    }
+
+    #contacts-form {
+        font-size: 1.25em;
+    }
+
+    #form-submit {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 980px){
+
+    #contacts {
+        flex-flow: row wrap;
+        padding-top: 0;
+        background-color: var(--background-color-1);
+    }
+
+    #contacts > * {
+        flex: 1 0 0;
+        width: 40%;
+    }
+
+    #contacts-img-container {
+        align-items: center;
+        justify-content: center;
+        gap:5%;
+    }
+
+    #contacts-img-container a{
+        width: 10%
+    }
+
+    #contacts-2 {
+        background-color: var(--background-color-2);
+    }
+}
